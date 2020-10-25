@@ -15,7 +15,7 @@ module.exports = {
             { text: 'About', link: '/about/' }
         ],
         sidebar: [
-            { title: "Home", children: ["", "TESTPAGE"]},
+            { title: "Home", children: ["", "TESTPAGE", "TESTPAGE2"]},
         ],
         smoothScroll: true,
         lastUpdated: 'Last Updated'
