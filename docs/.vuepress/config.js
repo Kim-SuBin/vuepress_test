@@ -1,4 +1,5 @@
-const sidebar = require('./auto-sidebar-generator');
+// const sidebar = require('./auto-sidebar-generator');
+const sidebar = require('vuepress-sidebar-generator')
 
 module.exports = {
     title: 'Python Mentoring',
@@ -10,7 +11,6 @@ module.exports = {
         ],
         sidebar: [
             '',   //top level README.md
-            '/foo-nav',
             sidebar.getSidebarGroup('/tester/', 'Tester', true)
         ]
     }
