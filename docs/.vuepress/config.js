@@ -25,6 +25,15 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'About', link: '/about/' }
-        ]
+        ],
+        sidebar: {
+            '/about/': [
+                ''
+            ],
+            '/': [
+                '',
+                'foo-nav'
+            ]
+        }
     }
 }
