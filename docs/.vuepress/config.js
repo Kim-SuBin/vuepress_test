@@ -1,6 +1,8 @@
 module.exports = {
     title: 'Python Mentoring',
     description: 'HUFS RC SW Mentoring Program 강의 자료',
+    email: '2504sb@gmail.com',
+    base: 'python_mentoring',
     head: [
         ['link', { rel: 'icon', href: '/images/logo-144.png' }],
         ['link', { rel: 'manifest', href: '/manifest.json' }]
@@ -12,15 +14,22 @@ module.exports = {
             updatePopup: true
         }]
     ],
+    
     themeConfig: {
-        displayAllHeaders: false,
-        lastUpdated: 'Last Updated',
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'About', link: '/about/' }
+            { text: 'Github', link: 'https://github.com/Kim-SuBin/python_mentoring' },
+            { text: 'Blog', link: 'https://subin-0320.tistory.com/' }
         ],
         sidebar: [
-            'section1'
-        ]
+            {
+                title: 'Section1',
+                children: [
+                    '/section1/test1',
+                    '/section1/test2'
+                ]
+            }
+        ],
+        smoothScroll: true,
+        lastUpdated: 'Last Updated',
     }
 }
