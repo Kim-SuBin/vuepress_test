@@ -20,10 +20,7 @@ module.exports = {
             { text: 'About', link: '/about/' }
         ],
         sidebar: [
-            '/',
-            'foo-nav',
-            '/about/',
-            '/about/testpage'
+            'section1'
         ]
     }
 }
