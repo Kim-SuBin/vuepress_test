@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Python Mentoring',
-    description: 'HUFS RC SW Mentoring Program 강의 자료',
+    title: 'Vuepress Test',
+    description: 'Vuepress Test',
     email: '2504sb@gmail.com',
     // base: 'python_mentoring',
     head: [

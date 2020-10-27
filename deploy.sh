@@ -14,6 +14,6 @@ git init
 git add -A
 git commit -m '[Deploy] Vuepress'
 
-git push -f https://github.com/Kim-SuBin/python_mentoring.git master:gh-pages
+git push -f https://github.com/Kim-SuBin/vuepress_test.git master:gh-pages
 
 cd -

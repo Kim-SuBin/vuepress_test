@@ -1,7 +1,7 @@
 {
-    "name": "mentoring",
+    "name": "test",
     "version": "1.0.0",
-    "repository": "https://github.com/Kim-SuBin/python_mentoring.git",
+    "repository": "https://github.com/Kim-SuBin/vuepress_test.git",
     "author": "Subin Kim <2504sb@gmail.com>",
     "license": "MIT",
     "scripts": {
