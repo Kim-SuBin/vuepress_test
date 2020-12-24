@@ -1,0 +1,32 @@
+// build.gradle 파일은 중요!!
+// gradle은 version 설정 및 라이브러리를 불러옴
+
+// 사용한 spring version 및 java version에 관한 내용이 들어감
+plugins {
+	id 'org.springframework.boot' version '2.3.7.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11' // java 11 version 이라는 의미
+
+// mavenCentral에서 라이브러리를 다운받으라고 설정되어 있음
+repositories {
+	mavenCentral()
+}
+
+// implementation에는 추가한 라이브러리에 대한 정보가 포함되어 있음
+// testImplementation은 test 관련 라이브러리로 참고만 하면 됨
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
