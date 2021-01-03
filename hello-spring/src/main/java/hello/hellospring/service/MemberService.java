@@ -2,10 +2,13 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+// 스프링에서 MemberService를 인식하도록 @Service 어노테이션 추가
+@Service
 public class MemberService {
 
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
