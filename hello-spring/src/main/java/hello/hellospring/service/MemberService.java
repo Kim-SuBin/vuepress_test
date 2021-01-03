@@ -2,6 +2,7 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +17,8 @@ public class MemberService {
     // 직접 생성하는 형태에서 외부에서 가져오는 형태로 변경
     private final MemberRepository memberRepository;
 
+    // 생성자에 Autowired가 있으면 스프링이 스프링 컨테이너에 있는 memberRepository를 가져와 연결시켜 줌
+    @Autowired
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
