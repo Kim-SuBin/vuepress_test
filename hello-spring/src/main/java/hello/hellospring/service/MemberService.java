@@ -2,14 +2,12 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 // 스프링에서 MemberService를 인식하도록 @Service 어노테이션 추가
-@Service
+// @Service
 public class MemberService {
 
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -18,7 +16,7 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
     // 생성자에 Autowired가 있으면 스프링이 스프링 컨테이너에 있는 memberRepository를 가져와 연결시켜 줌
-    @Autowired
+    // @Autowired
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }

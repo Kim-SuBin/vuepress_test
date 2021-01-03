@@ -1,12 +1,11 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
-import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 // 스프링에서 MemberRepository를 인식하도록 @Repository 어노테이션 추가
-@Repository
+// @Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     // 실무에서는 동시성 문제 때문에 HashMap이 아닌 ConcurrentHashMap을 써야하는데 단순 예제이므로 HashMap 사용
