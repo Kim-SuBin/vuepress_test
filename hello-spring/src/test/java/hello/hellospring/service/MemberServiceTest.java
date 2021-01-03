@@ -14,7 +14,7 @@ class MemberServiceTest {
     // MemberService memberService = new MemberService();
     // MemoryMemberRepository memberRepository = new MemoryMemberRepository();
 
-    // 같은 메모리 멤버 레포지토리를 사용하는 형태로 변경
+    // 같은 메모리 멤버 리포지토리를 사용하는 형태로 변경
     MemberService memberService;
     MemoryMemberRepository memberRepository;
 
