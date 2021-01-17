@@ -29,6 +29,22 @@ public class MemberService {
     // import class 단축키 Ctrl + Shift + o
     public Long join(Member member) {
 
+        // 호출 시간 측정
+        long start = System.currentTimeMillis();
+
+        // 로직이 끝날 때의 시간을 찍어야 함
+        try {
+            validateDuplicateMember(member); // 중복 회원 검증
+
+            memberRepository.save(member);
+            return member.getId();
+        } finally {
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println("join = " + timeMs + "ms");
+        }
+
+
         // 같은 이름이 있는 중복 회원 X (비즈니스로직을 이렇게 잡음!)
         /*
         // 변수 추출 단축키 Ctrl + Alt + v (리팩토링용)
@@ -48,10 +64,10 @@ public class MemberService {
                     throw new IllegalStateException("이미 존재하는 회원입니다.");
                 });*/
 
-        validateDuplicateMember(member); // 중복 회원 검증
-
-        memberRepository.save(member);
-        return member.getId();
+//        validateDuplicateMember(member); // 중복 회원 검증
+//
+//        memberRepository.save(member);
+//        return member.getId();
     }
 
     private void validateDuplicateMember(Member member) {
@@ -63,7 +79,14 @@ public class MemberService {
 
     // 전체 회원 조회
     public List<Member> findMembers() {
-        return memberRepository.findAll();
+        long start = System.currentTimeMillis();
+        try {
+            return memberRepository.findAll();
+        } finally {
+            long finish = System.currentTimeMillis();
+            long timeMs = finish - start;
+            System.out.println("findMembers = " + timeMs + "ms");
+        }
     }
 
     public Optional<Member> findOne(Long memberId) {
