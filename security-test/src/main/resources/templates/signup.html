@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>SignUp</title>
+</head>
+<body>
+<h1>SignUp</h1>
+<hr>
+<form action="/signup" th:object="${member}" method="post">
+  <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+  <input type="text" th:field="*{username}" placeholder="ID" />
+  <input type="password" th:field="*{password}" placeholder="PWD">
+  <button type="submit">SignUp</button>
+</form>
+</body>
+</html>
