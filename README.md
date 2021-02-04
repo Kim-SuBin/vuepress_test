@@ -25,7 +25,7 @@
 
 ### 👩‍💻 강의 수강
 |Check|강의|Directory|
-|---|---|---|
+|:---:|---|---|
 |✅|스프링 입문 - 코드로 베우는 스프링 부트, 웹MVC, DB접근기술|[hello-spring](https://github.com/Kim-SuBin/springboot-study/tree/master/hello-spring)|
 ||스프링 핵심 원리 - 기본편||
 ||자바 ORM 표준 JPA프로그래밍 - 기본편||
