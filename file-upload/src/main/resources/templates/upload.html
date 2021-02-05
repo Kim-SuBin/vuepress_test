@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload</title>
+</head>
+<body>
+<h1>File Upload</h1>
+<!-- 파일 업로드는 multipart/form-data로 전송 -->
+<form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+  제목 : <input type="text" name="title"> <br>
+  파일 : <input type="file" name="file"> <br>
+  <button>등록하기</button>
+</form>
+</body>
+</html>
