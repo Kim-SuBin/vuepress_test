@@ -16,7 +16,7 @@ import java.io.IOException;
 @Slf4j
 @RequiredArgsConstructor
 @Component
-public class S3Uploader implements Uploader {
+public class S3Uploader {
 
     private final static String TEMP_FILE_PATH = "src/main/resources/";
 
