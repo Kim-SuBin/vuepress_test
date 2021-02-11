@@ -30,11 +30,12 @@ public class S3Uploader implements Uploader {
         return upload(convertedFile, dirName);
     }
 
+    long cnt = 1;
     private String upload(File uploadFile, String dirName) {
-        String fileName = dirName + "/" + uploadFile.getName();
-        String uploadImageUrl = putS3(uploadFile, fileName);
+        String fileName = dirName + "/" + String.valueOf(cnt) + uploadFile.getName();
+        String uploadUrl = putS3(uploadFile, fileName);
         removeNewFile(uploadFile);
-        return uploadImageUrl;
+        return uploadUrl;
     }
 
     private String putS3(File uploadFile, String fileName) {
