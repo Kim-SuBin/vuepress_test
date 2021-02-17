@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sstt?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create # 실행 시점에 테이블을 매번 생성 (이전 테이블 삭제)
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8081
