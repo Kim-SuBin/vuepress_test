@@ -19,7 +19,7 @@ public class UploadController {
     private final UploadRepository uploadRepository;
 
     @PostMapping("/upload")
-    public Long upload(@RequestParam("data") MultipartFile file, @RequestParam("title") String title) throws IOException {
+    public Long upload(@RequestParam("data") MultipartFile file, @RequestParam("title") String title) throws Exception {
         String path = uploader.upload(file, "static");
         return uploadRepository.save(
                 Upload.builder()
