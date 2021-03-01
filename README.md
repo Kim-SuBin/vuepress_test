@@ -20,10 +20,10 @@
 <br />
 
 ### ✍ 공부 기록
-👉 [Spring Security](https://github.com/Kim-SuBin/springboot-study/tree/master/security-test)    
-👉 [S3 File Upload](https://github.com/Kim-SuBin/springboot-study/tree/master/file-upload)    
-👉 [Spring Security API](https://github.com/Kim-SuBin/springboot-study/tree/master/securityapi)    
-👉 [S3 File Upload API](https://github.com/Kim-SuBin/springboot-study/tree/master/file-upload-api)
+👉 [Spring Security](https://github.com/Kim-SuBin/springboot-study/tree/master/security-test) <br />
+👉 [S3 File Upload](https://github.com/Kim-SuBin/springboot-study/tree/master/file-upload) <br />
+👉 [Spring Security API](https://github.com/Kim-SuBin/springboot-study/tree/master/securityapi) <br />
+👉 [S3 File Upload API](https://github.com/Kim-SuBin/springboot-study/tree/master/file-upload-api) <br />
 👉 [Rest Template (외부 API 통신)](https://github.com/Kim-SuBin/springboot-study/tree/master/rest-template)
 
 <br />
