@@ -5,6 +5,7 @@
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/languages/java.svg" alt="java" />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/framework/spring.svg" alt="spring" />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/library/thymeleaf.svg" alt="thymeleaf" />
+    <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/service/amazons3.svg" alt="amazon s3' />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/system/mysql.svg" alt="mysql">
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/system/h2.svg" alt="h2" />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/tool/intellijidea.svg" alt="intelliJ" />
@@ -23,6 +24,7 @@
 👉 [S3 File Upload](https://github.com/Kim-SuBin/springboot-study/tree/master/file-upload)    
 👉 [Spring Security API](https://github.com/Kim-SuBin/springboot-study/tree/master/securityapi)    
 👉 [S3 File Upload API](https://github.com/Kim-SuBin/springboot-study/tree/master/file-upload-api)
+👉 [Rest Template (외부 API 통신)](https://github.com/Kim-SuBin/springboot-study/tree/master/rest-template)
 
 <br />
 
