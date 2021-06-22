@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import url('reset.css');
+
+/******************  레이아웃 ******************/
+
+#header{width:100%;}
+#header .headWrap {width:960px; height:80px; margin: 0 auto; }
+#contents {width:100%;  min-height:calc(100% - 190px);   }
+#contents .con {width:960px; margin:0 auto; height:100%; }
+#contents .con:after { content:""; display:block; clear:both; }
+#contents .con #sideMenu {float:left; width: 230px;  height:100%; background-color:#16171f;}
+#contents .con #subContents {float:left;  width:730px; height:100%;  background-color: #f5f5f5;}
+#footer {width:100%; background-color:#d8d8dd; clear:both;}
+#footer .footerWrap {width:960px;margin:0 auto;height:110px;/* position:relative; */}
+
+
+.bold{font-weight:700; font-size:inherit;}
+.point{color:#0054a6; font-size:inherit;}
+
+
+/******************  헤더 ******************/
+.headWrap h1{ width:194px; height:80px; float:left; }
+.headWrap h1 a{width:100%; height:100%; display:block; float:left; background:url(/images/admin/admin_logo.png) no-repeat center ; text-indent:-9999px}
+.util {float:right; margin-right:20px; margin-top:30px; }
+.util li{float:left; margin-left:10px; border-left:1px solid #ddd;}
+.util li:first-child { border:0px}
+.util li a {color:#767676;}
+.util .home {background:url(/images/admin/ico_home.png) no-repeat left center; padding-left:23px;}
+.util .logout {background:url(/images/admin/ico_logout.png) no-repeat 9px center; padding-left:31px;}
+
+
+
+/****************** 사이트메뉴 ******************/
+
+.con #sideMenu .on {background-color:#0054a6;}
+.menu h2 {height:10px; padding:30px 20px; font-size:16px; font-weight:700; color:#fff; background:url(/images/admin/hr.png) no-repeat bottom; width:190px;}
+.menu dl dt {font-size:14px;  color:#d6d7de; padding:18px 30px; }
+.menu dl dd {background:url(/images/admin/list.png) no-repeat center; padding:18px 30px 18px 40px;}
+.menu dl dd a {font-size:14px; color:#d6d7de;}
+.menu dl .over {background-color:#1a65af;}
+
+
+/****************** 푸터 ******************/
+
+#footer .footerWrap p{padding-top:50px; text-align:center; font-size:12px; color:#40414a;}
+
+
+
+
+/****************** 관리자 - 메인   ******************/
+
+.greeting {padding:50px;}
+.greeting p:first-child {line-height:24px; font-size:20px; color:#111;}
+.greeting .subText{font-size:14px; color:#999;}
+
+
+
+/****************** 관리자 - 공지사항list ******************/
+
+.notice {padding:50px; }
+.notice:after { content:""; display:block; clear:both; }
+.notice .title {font-size:24px; font-weight:700; color:#222;}
+.board {margin-top:20px; }
+.boardTop:after{display:block; content:""; clear:both;}
+.boardTop .result{float:right;}
+.boardTop .result li {float:left; color:#767676; margin-left:8px; padding-left:8px; border-left:1px solid #ccc;}
+.boardTop .result li:first-child{border:none;}
+.list>li{border-bottom:1px solid #dedede; position:relative;}
+.list{border-top:2px solid #043465; margin-top:10px; clear:both;}
+.list .data{float:left; margin-top:25px;}
+.list .data .num{ float:left; width:60px; font-size:12px; color:#767676; text-align:center; vertical-align:middle; }
+.list .data .add{ float:left;  font-size:14px; color:#767676;}
+.list .link{padding:0 60px; }
+.list .link a{display:block; clear:both; padding:15px 0 25px; font-size:16px; font-weight:700; color:#222; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; vertical-align:middle}
+.list .data .ico_file {background:url(/images/common/ico_file.png) no-repeat center; height:13px; width:13px; float:left; margin-left:8px; border-left:1px solid #ccc; padding-left:17px; }
+.ico_new {background:url(/images/common/ico_new.png) no-repeat left; height:16px; width:16px; display:inline-block; vertical-align:middle; margin-top:-2px; margin-left:7px }
+
+
+
+
+
+
+/****************** 관리자 - 공지사항view ******************/
+
+.view{border-top:2px solid #043465;}
+.view .data{float:left; margin-top:25px;}
+.view .data .add{ float:left;  font-size:14px; color:#767676;}
+.view>li{border-bottom:1px solid #dedede; position:relative; overflow:hidden;}
+.view .data{margin-top:20px; margin-left:20px;}
+.view .title{clear:both; padding:15px 135px 20px 20px;font-size:20px; font-weight:700; color:#222; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.view .file {background:url(../images/common/ico_file.png) no-repeat 20px center; color:#454545;}
+.view .file a{display:block; padding-left:44px; line-height:50px; font-size:14px; color:#454545;}
+.view .BoardCon{padding:30px 20px; min-height:300px;}
+.view .boardPrev p,.view .boardNext p{color:#111; font-weight:700; float:left; margin-left:20px; line-height:50px;}
+.view .boardPrev a,.view .boardNext a{display:block;color:#454545; float:left; margin-left:10px; text-decoration:underline; line-height:50px;}
+.btnList{float:right; margin-top:30px;}
+.btnList li {float:right; margin-left:10px;}
+.solidBtn{line-height:40px; display:block; width:130px; color:#fff; font-weight:700; font-size:16px; background:#0054a6; text-align:center;}
+.lineBtn{line-height:40px; display:block; width:130px; color:#454545; font-weight:700; font-size:16px; border:1px solid #cbcbcb; text-align:center;}
+
+
+
+
+
+/****************** 관리자 - 공지사항write&modify ******************/
+
+
+/******************   TABLE   ******************/
+
+table{width:100%; border-top:2px solid #3e4256; table-layout:fixed;}
+table th{font-size:14px; color:#454545; line-height:20px; padding:20px; text-align:left; vertical-align:middle; border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+table th:last-child{border-right:none;}
+table td:last-child{border-right:none;}
+table td{line-height:20px; vertical-align:middle; border-right:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px 20px;}
+.selectBox {position:relative; width:85px; height:28px; background:url(../images/common/select.png) right center no-repeat; border: 1px solid #cdcdcd; display:inline-block;  }
+.selectBox label {position: absolute;font-size:14px; color:#454545; top:5px; left:9px;}
+.selectBox select {width:100%; height:28px; min-height:28px;  opacity:0; filter: alpha(opacity=0); /* IE 8 */}
+.selectBox.focus{border-color: #db3900;}
+.filePoint {display:inline-block;margin-left:10px;}
+.board input.title {border:solid 1px #cbcbcb; background-color:#f5f5f5; height:30px; min-width:100%; box-sizing:border-box; padding:0 10px; font-size: 14px; color: #454545; line-height:20px; font-weight:300}
+.fileInput .btnSelect {position:relative; cursor:pointer; display:inline-block; color:#fff; box-sizing:border-box; background:#8f8f8f;  font-weight:700; width:80px; height:30px; line-height:29px;  text-align:center;  }
+.board input.file {border:solid 1px #cbcbcb; background-color:#f5f5f5; height:30px; min-width:332px; line-height:30px; box-sizing:border-box; padding:0 10px;}
+
+
+.fileInput label input {position:absolute; width:0; height:0; overflow:hidden;}
+.textArea {width:100%; height:260px}
+.btnFile a{color:#fff; display:inline-block; padding:0 14px; line-height:30px; box-sizing:border-box; background:#8f8f8f; font-weight:700;vertical-align:middle}
+
+
+
+.fileAttach {padding:15px 0;}
+.fileAttach ul{margin-bottom:10px}
+.fileAttach ul:last-child{margin-bottom:0px}
+.fileAttach ul li{float:left;}
+.fileAttach ul:after { content:""; display:block; clear:both;}
+.fileAttach .file {background:url(../images/common/ico_file.png) no-repeat left ; color:#454545; width:14px; height:13px; padding-top:15px;  margin-right:10px; }
+.fileAttach .fileName a {margin-right:16px; line-height:29px; font-size:14px; color:#454545;}
+.fileAttach .fileDel a {margin-right:16px; line-height:29px; text-decoration:line-through}
+
+
+
+/******************   paging   ******************/
+
+.paging{width:100%; margin-top:60px; text-align:center;}
+.paging a{display:inline-block; width:30px; height:30px; color:#111;border:1px solid #d9d9d9; border-right:none; vertical-align:middle; line-height:30px;}
+.paging a.last{border-right:1px solid #d9d9d9;}
+.paging a.on{background:#3e4256;border:1px solid #3e4256; color:#fff;}
+.paging a.ll{width:30px; height:30px; background:url(../images/common/page_ll.png) no-repeat center center;border:1px solid #d9d9d9; margin-right:5px;}
+.paging a.l{width:30px; height:30px; background:url(../images/common/page_l.png) no-repeat center center;border:1px solid #d9d9d9; margin-right:10px;}
+.paging a.r{width:30px; height:30px; background:url(../images/common/page_r.png) no-repeat center center;border:1px solid #d9d9d9; margin-left:5px;}
+.paging a.rr{wiidth:30px; height:30px; background:url(../images/common/page_rr.png) no-repeat center center;border:1px solid #d9d9d9; margin-left:5px;}
+.paging .pages a{width:30px; height:30px; border-right:1px solid #d9d9d9; line-height:30px; text-align:center; color:#111; display:inline-block; vertical-align:middle;}
+.paging .pages a:last-child{border-right:none;}
+
+
+
+
+
+
+/******************   SELECT   ******************/
+
+#select {position:relative; width:200px; height:28px; background:url(../images/common/select.png) right center no-repeat; border: 1px solid #cdcdcd; display:inline-block; vertical-align:middle; }
+#select label {position: absolute;font-size:14px; color:#454545; top:7px; left:9px;}
+#select select#search {width: 100%; height:28px; min-height:28px; line-height:30px; opacity:0; filter: alpha(opacity=0); /* IE 8 */}
+#select.focus{border-color: #db3900;}
+.search {border:1px solid #cdcdcd; text-align:center; padding:30px 0; margin-top:40px; }
+.search .textbox {position:relative; display:inline-block; vertical-align:middle; height:30px; margin-left:3px;}
+.search .textbox label {position:absolute; top:1px;left:1px; color:#454545; cursor:text; font-size:14px; line-height:26px; text-indent:16px;}
+#subContents .search .textbox input[type="text"] {
+  width: 270px;
+  height: 26px;
+  line-height:26px;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;  /* iSO 둥근모서리 제거 */
+  outline-style: none;  /* 포커스시 발생하는 효과 제거를 원한다면 */
+  -webkit-appearance: none;  /* 브라우저별 기본 스타일링 제거 */
+  -moz-appearance: none;
+  appearance: none;
+  text-indent:12px;
+  background-color:#f5f5f5;
+}
+.search .btnSearch{vertical-align:middle; margin-left:5px;}
+
+
+
