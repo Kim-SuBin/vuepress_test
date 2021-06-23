@@ -8,7 +8,36 @@
 <link href="css/admin.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
 <script type="text/javascript" src="se2/js/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 </head>
+
+<script type="text/javascript">
+    var oEditors = [];
+    $(document).ready(function(){
+    	
+    	nhn.husky.EZCreator.createInIFrame({
+            oAppRef : oEditors,
+            elPlaceHolder : "se3Body", //textarea에서 지정한 id와 일치.
+            sSkinURI : "se2/SmartEditor2Skin.html",
+            htParams : {
+                // 툴바 사용 여부 
+                bUseToolbar : true,
+                // 입력창 크기 조절바 사용 여부 
+                bUseVerticalResizer : true,
+                // 모드 탭(Editor | HTML | TEXT) 사용 여부 
+                bUseModeChanger : true,
+                bSkipXssFilter : true,
+                fOnBeforeUnload : function() {
+                	
+                }
+            },
+            fCreator : "createSEditor2"
+        });
+    	
+    });
+    
+</script>
+
 <body>
 	<div class="notice">
 		<p class="title">공지사항</p>
@@ -79,28 +108,6 @@
 		</div>
 	</div>
 </body>
-
-<script type="text/javascript">
-    var oEditors = [];
-    nhn.husky.EZCreator.createInIFrame({
-        oAppRef : oEditors,
-        elPlaceHolder : "se3Body", //textarea에서 지정한 id와 일치.
-        sSkinURI : "se2/SmartEditor2Skin.html",
-        htParams : {
-            // 툴바 사용 여부 
-            bUseToolbar : true,
-            // 입력창 크기 조절바 사용 여부 
-            bUseVerticalResizer : true,
-            // 모드 탭(Editor | HTML | TEXT) 사용 여부 
-            bUseModeChanger : true,
-            bSkipXssFilter : true,
-            fOnBeforeUnload : function() {
-            	
-            }
-        },
-        fCreator : "createSEditor2"
-    });
-</script>
 
 </html>
 
