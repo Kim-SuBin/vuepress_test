@@ -17,7 +17,7 @@
     	
     	nhn.husky.EZCreator.createInIFrame({
             oAppRef : oEditors,
-            elPlaceHolder : "se3Body", //textarea에서 지정한 id와 일치.
+            elPlaceHolder : "se2Body", //textarea에서 지정한 id와 일치.
             sSkinURI : "se2/SmartEditor2Skin.html",
             htParams : {
                 // 툴바 사용 여부 
@@ -27,14 +27,23 @@
                 // 모드 탭(Editor | HTML | TEXT) 사용 여부 
                 bUseModeChanger : true,
                 bSkipXssFilter : true,
-                fOnBeforeUnload : function() {
-                	
+                fOnBeforeUnload : function(){
+                    
                 }
             },
+
             fCreator : "createSEditor2"
         });
     	
+    	$("#se2SaveBtn").click(function(){
+        	oEditors.getById["se2Body"].exec("UPDATE_CONTENTS_FIELD", []);
+        	$("#Frm").submit();
+        });
+    	
     });
+    
+    
+    
     
 </script>
 
@@ -42,7 +51,7 @@
 	<div class="notice">
 		<p class="title">공지사항</p>
 		<div class="board">
-			<form name="Frm" method="post" enctype="multipart/form-data">
+			<form name="Frm" method="post" action="sendCheck.jsp" id="Frm">
 				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mt20">
 					<colgroup>
 						<col width="20%">
@@ -91,20 +100,20 @@
 						<tr>
 							<th class="left">내용</th>
 							<td>
-								<textarea id="se3Body" name="se3Body" class="createSEditor2" style="width:90%"></textarea>
+								<textarea id="se2Body" name="se2Body" class="createSEditor2" style="width:90%"></textarea>
 							</td>
 						</tr>
 					</tbody>
 				</table>
+				<ul class="btnList">
+					<li>
+						<input type="button" class="solidBtn" id="se2SaveBtn" value="저장"/>
+					</li>
+					<li>
+						<a href="javascript:fn_list();" class="lineBtn">취소</a>
+					</li>
+				</ul>
 			</form>
-			<ul class="btnList">
-				<li>
-					<a href="javascript:sendit()" class="solidBtn">저장</a>
-				</li>
-				<li>
-					<a href="javascript:fn_list();" class="lineBtn">취소</a>
-				</li>
-			</ul>
 		</div>
 	</div>
 </body>
