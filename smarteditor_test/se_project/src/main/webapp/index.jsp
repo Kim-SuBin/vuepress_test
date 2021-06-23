@@ -35,14 +35,45 @@
             fCreator : "createSEditor2"
         });
     	
-    	$("#se2SaveBtn").click(function(){
-        	oEditors.getById["se2Body"].exec("UPDATE_CONTENTS_FIELD", []);
-        	$("#Frm").submit();
-        });
-    	
     });
     
-    
+    function sendit() {
+    	
+    	oEditors.getById["se2Body"].exec("UPDATE_CONTENTS_FIELD", []);
+    	
+		var wlist = [ ".ppt", ".pptx", ".doc", ".docx", ".hwp", ".xls", ".xlsx", ".pdf", ".jpg", ".png", ".gif", ".bmp", ".txt" ];
+
+		var extChk = -1;
+
+		if (document.Frm.head.value == "") {
+			alert("제목을 입력하여 주십시오")
+			document.Frm.head.focus();
+			return;
+		}
+
+		if (document.Frm.se2Body.value == "") {
+			alert("내용을 입력하여 주십시오")
+			document.Frm.se2Body.focus();
+			return;
+		}
+
+		for (var i = 1; i <= 5; i++) {
+			var file = $("#file" + i).val();
+
+			if (file != "" && file.slice(file.indexOf(".") + 1).toLowerCase() != "") {
+				extChk = wlist.indexOf("." + file.slice(file.indexOf(".") + 1).toLowerCase());
+
+				if (extChk < 0) {
+					alert("첨부파일이 허용된 확장자가 아닙니다.");
+					return;
+				}
+			}
+		}
+
+		document.Frm.action = "sendCheck.jsp";
+		document.Frm.target="_new";
+		document.Frm.submit();
+	}
     
     
 </script>
@@ -51,7 +82,7 @@
 	<div class="notice">
 		<p class="title">공지사항</p>
 		<div class="board">
-			<form name="Frm" method="post" action="sendCheck.jsp" id="Frm">
+			<form name="Frm" method="post">
 				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mt20">
 					<colgroup>
 						<col width="20%">
@@ -107,7 +138,7 @@
 				</table>
 				<ul class="btnList">
 					<li>
-						<input type="button" class="solidBtn" id="se2SaveBtn" value="저장"/>
+						<a href="javascript:sendit()" class="solidBtn">저장</a>
 					</li>
 					<li>
 						<a href="javascript:fn_list();" class="lineBtn">취소</a>

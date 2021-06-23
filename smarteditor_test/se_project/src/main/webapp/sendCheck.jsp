@@ -2,15 +2,15 @@
     pageEncoding="EUC-KR"%>
     
 <%    
-    //Á¦´ë·Î utf-8È¯°æÀÌ ¾Æ´Ï¶ó ÇÑ±Û ±úÁü ±×·¡¼­ ÀÓÀÇ·Î Ãß°¡                                                   
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ utf-8È¯ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ ï¿½Ñ±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç·ï¿½ ï¿½ß°ï¿½                                                   
     request.setCharacterEncoding("utf-8");
     
     String head = request.getParameter("head");
     String content = request.getParameter("se2Body");
     
-    //ÄÜ¼Ö Ãâ·Â
-    System.out.println("Á¦¸ñ:"+head);
-    System.out.println("³»¿ë:"+content);    
+    //ï¿½Ü¼ï¿½ ï¿½ï¿½ï¿½
+    System.out.println("ï¿½ï¿½ï¿½ï¿½:"+head);
+    System.out.println("ï¿½ï¿½ï¿½ï¿½:"+content);    
 %>
 
 <!DOCTYPE html>
@@ -21,8 +21,8 @@
 </head>
 <body>
 
-Á¦¸ñ : <%=head %><br>
-³»¿ë : <br>
+ï¿½ï¿½ï¿½ï¿½ : <%=head %><br>
+ï¿½ï¿½ï¿½ï¿½ : <br>
 <%=content %>
 
 </body>
