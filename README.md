@@ -5,8 +5,8 @@
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/languages/java.svg" alt="java" />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/framework/spring.svg" alt="spring" />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/library/thymeleaf.svg" alt="thymeleaf" />
-    <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/service/amazons3.svg" alt="amazon s3' />
-  <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/system/mysql.svg" alt="mysql">
+    <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/service/amazons3.svg" alt="amazon s3" />
+  <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/system/mysql.svg" alt="mysql"/>
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/system/h2.svg" alt="h2" />
   <img src="https://github.com/Kim-SuBin/Kim-SuBin/blob/master/svg/dev/tool/intellijidea.svg" alt="intelliJ" />
   
@@ -40,3 +40,10 @@
 ||실전! Querydsl||
 
 > 7개의 강의는 `Inflearn`에 등록된 `김영한`님의 Spring 강의입니다.
+
+                                                                                                            
+<br/>
+<br/>
+```
+Spring 강의는 다시 들으며 새로운 레포지토리에 정리할 예정 (2021.08.01 이후)
+```
